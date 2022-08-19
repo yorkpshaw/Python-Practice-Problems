@@ -8,5 +8,16 @@
 # Write out some pseudocode before trying to solve the
 # problem to get a good feel for how to solve it.
 
+value1 = 8
+value2 = 13
+
+
 def minimum_value(value1, value2):
-    pass
+
+    if value1 <= value2:
+        return value1
+    elif value2 <= value1:
+        return value2
+
+
+print(minimum_value(value1, value2))
