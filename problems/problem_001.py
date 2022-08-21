@@ -8,9 +8,6 @@
 # Write out some pseudocode before trying to solve the
 # problem to get a good feel for how to solve it.
 
-value1 = 8
-value2 = 13
-
 
 def minimum_value(value1, value2):
 
@@ -20,4 +17,7 @@ def minimum_value(value1, value2):
         return value2
 
 
-print(minimum_value(value1, value2))
+print(minimum_value(33, 66))
+print(minimum_value(23, 3))
+print(minimum_value(10, 91))
+print(minimum_value(22, 13))
