@@ -12,9 +12,9 @@
 # Write out some pseudocode before trying to solve the
 # problem to get a good feel for how to solve it.
 
-value1 = 4
+value1 = 66
 value2 = 33
-value3 = 9
+value3 = 10
 
 
 def max_of_three(value1, value2, value3):
