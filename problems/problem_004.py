@@ -14,7 +14,7 @@
 
 value1 = 66
 value2 = 33
-value3 = 10
+value3 = 3
 
 
 def max_of_three(value1, value2, value3):
