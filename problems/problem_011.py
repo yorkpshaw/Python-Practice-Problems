@@ -7,5 +7,17 @@
 # Write out some pseudocode before trying to solve the
 # problem to get a good feel for how to solve it.
 
+
 def is_divisible_by_5(number):
-    pass
+    if number % 5 == 0:
+        return "Fizz"
+    else:
+        return number
+
+
+print(is_divisible_by_5(5))
+print(is_divisible_by_5(6))
+print(is_divisible_by_5(10))
+print(is_divisible_by_5(15))
+print(is_divisible_by_5(23))
+print(is_divisible_by_5(66))
