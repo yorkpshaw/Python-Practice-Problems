@@ -15,6 +15,6 @@ def is_inside_bounds(x, y):
 
 
 print(is_inside_bounds(0, 10))
-print(is_inside_bounds(12, 11))
-print(is_inside_bounds(33, 5))
-print(is_inside_bounds(0, 33))
+print(is_inside_bounds(12, 9))
+print(is_inside_bounds(9, 12))
+print(is_inside_bounds(0, 9))
