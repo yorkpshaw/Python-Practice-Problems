@@ -27,3 +27,5 @@ def max_in_list(values):
 
 
 print(max_in_list([99, 8, 6, 101, 5, 7]))
+print(max_in_list([33, 8, 6, 2, 5, 100]))
+print(max_in_list([99, 200, 6, 0, 5, 7]))
