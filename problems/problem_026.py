@@ -12,5 +12,12 @@
 #     and less than 70
 #   * An "F" for any other average
 
+# values is a list of scores
+# create a score variable of 0 to add the list of numbers to
+# add the list of scores together using a for loop
+# create a variable to get the average of the scores
+# create if statements 
+
 def calculate_grade(values):
-    pass
+    for sum in values:
+        

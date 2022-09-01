@@ -6,5 +6,10 @@
 #   * If it is not a workday, the list needs to contain
 #     "surfboard"
 
+# use true and false statements?
+# create an empty list variable
+# if is_workday is true but is_sunny is not true, return a list with "umbrella" and "laptop"
+# if it is not a workday, return a list with "surfboard"
+
+
 def gear_for_day(is_workday, is_sunny):
-    pass

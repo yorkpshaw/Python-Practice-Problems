@@ -10,5 +10,23 @@
 # Write out some pseudocode before trying to solve the
 # problem to get a good feel for how to solve it.
 
+# if the ingredient list contains flour, eggs, and oil, return true
+# if it contains anything else, return false
+# loop over the list to see if it contains those 3 elements
+
+
 def can_make_pasta(ingredients):
-    pass
+    if (
+        "flour" in ingredients
+        and "eggs" in ingredients
+        and "oil" in ingredients
+    ):
+        return True
+    else:
+        return False
+
+
+print(can_make_pasta(["flour", "eggs", "oil"]))
+print(can_make_pasta(["flour", "eggs", "oil", "sugar"]))
+print(can_make_pasta(["flour", "bacon", "oil"]))
+print(can_make_pasta(["pickles", "are", "gross"]))
