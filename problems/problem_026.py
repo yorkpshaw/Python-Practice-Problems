@@ -13,11 +13,33 @@
 #   * An "F" for any other average
 
 # values is a list of scores
-# create a score variable of 0 to add the list of numbers to
-# add the list of scores together using a for loop
-# create a variable to get the average of the scores
-# create if statements 
+# loop over the values list and add each number
+# create a variable of 0 that is the sum of the numbers in the list
+# create an average variable that is the sum of numbers divided by list length
+# create a series of if statements that show the grade
+
 
 def calculate_grade(values):
-    for sum in values:
-        
+    sum = 0
+
+    for scores in values:
+        sum += scores
+    avg = sum / len(values)
+
+    if avg >= 90:
+        return "A"
+    elif avg >= 80:
+        return "B"
+    elif avg >= 70:
+        return "C"
+    elif avg >= 60:
+        return "D"
+    else:
+        return "F"
+
+
+print(calculate_grade([100, 90, 80]))
+print(calculate_grade([80, 90]))
+print(calculate_grade([70, 80]))
+print(calculate_grade([60, 70]))
+print(calculate_grade([55, 60, 50]))
