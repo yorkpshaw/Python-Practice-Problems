@@ -6,5 +6,13 @@
 # return None
 #
 
+
 def calculate_sum(values):
-    pass
+    if len(values) == 0:
+        return None
+    total = 0
+
+    for value in values:
+        total += value
+
+    return total
