@@ -15,5 +15,24 @@
 # Write out some pseudocode before trying to solve the
 # problem to get a good feel for how to solve it.
 
+#
+
+
 def sum_of_first_n_numbers(limit):
-    pass
+    if limit < 0:
+        return None
+
+    num = 0
+
+    for n in range(limit + 1):
+        num += n
+
+    return num
+
+
+print(sum_of_first_n_numbers(0))
+print(sum_of_first_n_numbers(1))
+print(sum_of_first_n_numbers(2))
+print(sum_of_first_n_numbers(5))
+print(sum_of_first_n_numbers(-1))
+print(sum_of_first_n_numbers(10))
