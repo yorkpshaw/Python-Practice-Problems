@@ -14,11 +14,13 @@
 
 
 def reverse_dictionary(dictionary):
-    inv_dict = {v: k for k, v in dictionary.items()}
 
+    inv_dict = {a: b for b, a in dictionary.items()}
     return inv_dict
 
 
 print(reverse_dictionary({}))
 print(reverse_dictionary({"key": "value"}))
 print(reverse_dictionary({"one": 1, "two": 2, "three": 3}))
+print(reverse_dictionary({"what": "is", "going": "on", "in": "here"}))
+print(reverse_dictionary({"66": 33, "55": 22.5, "100": 50}))
