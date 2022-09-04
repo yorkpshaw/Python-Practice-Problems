@@ -8,7 +8,24 @@
 #   * For "abccba", the result is "abc"
 #   * For "abccbad", the result is "abcd"
 #
-# If the list is empty, then return the empty string.
+# If the string is empty, then return the empty string.
+# create an empty string variable
+# if the letter is not in there, increment
+
 
 def remove_duplicate_letters(s):
-    pass
+    if len(s) == 0:
+        return " "
+    str = ""
+    for letter in s:
+        if letter not in str:
+            str += letter
+
+    return str
+
+
+print(remove_duplicate_letters("abcabc"))
+print(remove_duplicate_letters("abccba"))
+print(remove_duplicate_letters("abccbad"))
+print(remove_duplicate_letters("abc"))
+print(remove_duplicate_letters(""))
