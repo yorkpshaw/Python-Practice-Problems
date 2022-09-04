@@ -13,5 +13,24 @@
 # Write out some pseudocode before trying to solve the
 # problem to get a good feel for how to solve it.
 
+# loop over the list of numbers
+# multiply each number by itself
+# add the result of each index to the next
+
+
 def sum_of_squares(values):
-    pass
+    if len(values) == 0:
+        return None
+
+    sum = 0
+
+    for value in values:
+        value *= value
+        sum += value
+
+    return sum
+
+
+print(sum_of_squares([1, 2, 3]))
+print(sum_of_squares([-1, 0, 1]))
+print(sum_of_squares([4, 5, 6]))
