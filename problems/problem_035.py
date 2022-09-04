@@ -23,5 +23,24 @@
 # Do it without pseudocode, this time, from memory. Don't look
 # at the last one you just wrote unless you really must.
 
+
 def count_letters_and_digits(s):
-    pass
+
+    num_char = 0
+    num_int = 0
+
+    for char in s:
+        if char.isalpha():
+            num_char += 1
+        if char.isdigit():
+            num_int += 1
+
+    return num_char, num_int
+
+
+print(count_letters_and_digits(""))
+print(count_letters_and_digits("a"))
+print(count_letters_and_digits("1"))
+print(count_letters_and_digits("1a"))
+print(count_letters_and_digits("whoathisiscoo1"))
+print(count_letters_and_digits("66GG66"))
