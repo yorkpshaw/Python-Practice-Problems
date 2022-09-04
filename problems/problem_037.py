@@ -23,5 +23,24 @@
 #     pad:    " "
 #     result: "   19"
 
+
+# append the result by length - length of number amount of times
+# append number to that afterwards
+
+
 def pad_left(number, length, pad):
-    pass
+
+    omg = str(number)
+
+    while len(omg) < length:
+        omg = pad + omg
+
+    return omg
+
+
+print(pad_left(10, 4, "*"))
+print(pad_left(10, 5, "0"))
+print(pad_left(1000, 3, "0"))
+print(pad_left(19, 5, "-"))
+print(pad_left(7777, 7, "#"))
+print(pad_left(555, 7, "^"))
