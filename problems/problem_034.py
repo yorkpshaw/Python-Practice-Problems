@@ -21,5 +21,28 @@
 #      return value1, value2
 
 
+# create two variables, one for letters and one for numbers
+# loop through S
+# if there is a letter, increment the letter variable
+# if there is a number, increment the count variable
+
+
 def count_letters_and_digits(s):
-    pass
+    value_num = 0
+    value_char = 0
+
+    for value in s:
+        if value.isdigit():
+            value_num += 1
+        if value.isalpha():
+            value_char += 1
+
+    return value_char, value_num
+
+
+print(count_letters_and_digits(""))
+print(count_letters_and_digits("a"))
+print(count_letters_and_digits("1"))
+print(count_letters_and_digits("1a"))
+print(count_letters_and_digits("what66"))
+print(count_letters_and_digits("omg7890"))
