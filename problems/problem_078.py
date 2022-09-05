@@ -21,4 +21,19 @@
 import math
 
 
+class Circle:
+    def __init__(self, radius):
+        if radius < 0:
+            raise ValueError
+        self.radius = radius
 
+    def calculate_perimeter(self):
+        return 2 * math.pi * self.radius
+
+    def calculate_area(self):
+        return math.pi * pow(self.radius, 2)
+
+
+circle = Circle(10)
+print(circle.calculate_perimeter())
+print(circle.calculate_area())
