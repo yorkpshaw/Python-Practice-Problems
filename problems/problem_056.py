@@ -15,3 +15,12 @@
 #       parameter 2: 0
 #     returns: "92380"
 
+
+def num_comcat(num1, num2):
+    string_num = str(num1) + str(num2)
+
+    return string_num
+
+
+print(num_comcat(3, 10))
+print(num_comcat(9238, 0))
