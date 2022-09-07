@@ -17,3 +17,13 @@
 #
 # You may want to look at the built-in "abs" function
 
+
+def biggest_gap(list_num):
+    biggest_num = []
+    for current in range(len(list_num) - 1):
+        biggest_num.append(abs(list_num[current] - list_num[current + 1]))
+    return max(biggest_num)
+
+
+print(biggest_gap([1, 11, 9, 20, 0]))
+print(biggest_gap([1, 3, 100, 103, 106]))
