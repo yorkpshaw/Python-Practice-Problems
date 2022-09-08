@@ -12,5 +12,19 @@
 #
 # Look up the zip function to help you with this problem.
 
+
+# Use zip to combine the two lists.
+# Iterate over the new list and add the corresponding indices
+# list3
+
+
 def pairwise_add(list1, list2):
-    pass
+    listzero = []
+
+    for entry1, entry2 in zip(list1, list2):
+        listzero.append(entry1 + entry2)
+
+    return listzero
+
+
+print(pairwise_add([1, 2, 3, 4], [4, 5, 6, 7]))
