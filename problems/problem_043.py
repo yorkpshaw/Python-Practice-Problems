@@ -19,5 +19,26 @@
 #
 # Look up the enumerate function to help you with this problem.
 
+
 def find_indexes(search_list, search_term):
-    pass
+    new_list = []
+
+    for idx, value in enumerate(search_list):
+        if value == search_term:
+            new_list.append(idx)
+
+    return new_list
+
+
+print(find_indexes([1, 2, 3, 4, 5], 4))
+print(find_indexes([1, 2, 3, 4, 5], 6))
+print(find_indexes([1, 2, 1, 2, 1], 1))
+
+# return the index of the number in the list
+# 0 1
+# 1 2
+# 2 3
+# 3 4
+# 4 5
+# append the index to new_list
+# looking for a value equal to search term
