@@ -17,5 +17,19 @@
 #
 # Remember that a dictionary has the ".get" method on it.
 
+
 def translate(key_list, dictionary):
-    pass
+    empty_list = []
+    for key in key_list:
+        empty_list.append(dictionary.get(key))
+
+    return empty_list
+
+
+print(translate(["name", "age"], {"name": "Noor", "age": 29}))
+print(translate(["eye color", "age"], {"name": "Noor", "age": 29}))
+print(translate(["age", "age", "age"], {"name": "Noor", "age": 29}))
+
+
+# key_list parameter is what we want to get from the dictionary parameter
+# Return a list of values from the key_list parameter
