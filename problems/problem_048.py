@@ -19,10 +19,33 @@
 
 ## FUNCTION PSEUDOCODE
 # function count_word_frequencies(sentence):
-    # words = split the sentence
-    # counts = new empty dictionary
-    # for each word in words
-        # if the word is not in counts
-            # counts[word] = 0
-        # add one to counts[word]
-    # return counts
+# words = split the sentence
+# counts = new empty dictionary
+# for each word in words
+# if the word is not in counts
+# counts[word] = 0
+# add one to counts[word]
+# return counts
+
+
+def count_word_frequencies(sentence):
+    words = sentence.split(" ")
+    counts = {}
+
+    for word in words:
+        if word not in counts:
+            counts[word] = 0
+        counts[word] = counts[word] + 1
+
+    return counts
+
+
+print(count_word_frequencies("I came I saw I learned"))
+print(count_word_frequencies("Hello Hello Hello"))
+
+
+# for word in words:
+#     if word in counts:
+#         counts[word] += 1
+#     else:
+#         counts[word] = 1
