@@ -22,3 +22,8 @@
 #
 # You may want to look up the ".strip()" method for the string.
 
+
+def group_cities_by_state(cities):
+    city_dict = {}
+
+    return city_dict
