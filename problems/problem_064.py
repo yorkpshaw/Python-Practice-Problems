@@ -13,3 +13,17 @@
 #                lows:  [72, 78, 70, 70]
 #       result:         [ 8,  3,  5, 10]
 
+
+# probably have to use the zip function
+
+
+def temperature_differences(highs, lows):
+    medium = []
+    for x, y in zip(highs, lows):
+        differences = x - y
+        medium.append(differences)
+
+    print(medium)
+
+
+print(temperature_differences([80, 81, 75, 80], [72, 78, 70, 70]))
