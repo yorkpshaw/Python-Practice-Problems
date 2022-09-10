@@ -12,3 +12,22 @@
 #    * input: [1, 2, 3]
 #      result: [1, 2], [3]
 
+
+def halve_the_list(singlelist):
+    list1 = []
+    list2 = []
+    mid = (len(singlelist) // 2) + 1
+    list1 = singlelist[:mid]
+    list2 = singlelist[mid:]
+
+    return list1, list2
+
+
+print(halve_the_list([1, 2, 3, 4]))
+print(halve_the_list([1, 2, 3]))
+
+
+# create two empty list variables
+# we want to return two lists cut in half
+# get the length of the list and divide it by two
+# return two lists
