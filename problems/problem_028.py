@@ -10,5 +10,24 @@
 #
 # If the list is empty, then return the empty string.
 
+# create an empty string variable
+# loop over the string
+# if the character is not in the empty string variable,
+# then add that character to the empty string variable
+
+
 def remove_duplicate_letters(s):
-    pass
+    # if s == "":
+    #     return s
+    no_duplicates = ""
+    for char in s:
+        if char not in no_duplicates:
+            no_duplicates += char
+
+    return no_duplicates
+
+
+print(remove_duplicate_letters("abcabc"))
+print(remove_duplicate_letters(""))
+print(remove_duplicate_letters("abccba"))
+print(remove_duplicate_letters("abccbad"))
