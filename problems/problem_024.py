@@ -7,5 +7,17 @@
 #
 # Pseudocode is available for you
 
+
 def calculate_average(values):
-    pass
+    if len(values) == 0:
+        return None
+
+    count = 0
+    for value in values:
+        count += value
+        average = count / len(values)
+
+    return average
+
+
+print(calculate_average([10, 10, 20, 20, 30, 30]))
