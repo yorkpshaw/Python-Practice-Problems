@@ -8,4 +8,8 @@
 #    * x: 3
 #      y: 4
 #      result: 7
+def sum_two_numbers(num1, num2):
+    return num1 + num2
 
+
+print(sum_two_numbers(2, 5))
