@@ -6,11 +6,9 @@
 def has_quorum(attendees_list, members_list):
     # get number of people in attendees list
     num_attendees = len(attendees_list)
-    print(num_attendees)
 
     # get the value of half of the members list
     num_members = len(members_list)
-    print(num_members)
 
     # do a comparison of num attendees and to 50% of members
 
