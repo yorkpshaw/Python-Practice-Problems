@@ -15,3 +15,17 @@
 #
 # https://docs.python.org/3/library/random.html
 
+from random import randint
+
+
+def generate_lottery_numbers():
+    lotto = []
+    while len(lotto) < 6:
+        random_number = randint(1, 40)
+        if random_number not in lotto:
+            lotto.append(random_number)
+
+    return lotto
+
+
+print(generate_lottery_numbers())
