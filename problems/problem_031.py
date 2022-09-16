@@ -13,5 +13,19 @@
 # Write out some pseudocode before trying to solve the
 # problem to get a good feel for how to solve it.
 
+# return a sum of each number multiplied by each other
+
+
 def sum_of_squares(values):
-    pass
+    if len(values) == 0:
+        return None
+
+    sum_num = 0
+    for value in values:
+        sum_num += value * value
+
+    return sum_num
+
+
+print(sum_of_squares([1, 2, 3]))
+print(sum_of_squares([-1, 0, 1]))
