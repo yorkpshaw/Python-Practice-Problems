@@ -15,5 +15,19 @@
 # Write out some pseudocode before trying to solve the
 # problem to get a good feel for how to solve it.
 
+
 def sum_of_first_n_even_numbers(n):
-    pass
+    if n < 0:
+        return None
+
+    count = 0
+
+    for number in range(n + 1):  # 3 + 1 = 4. Up to 3
+        count += number * 2  # 1*2 + 2*2 + 3*2
+
+    return count
+
+
+print(sum_of_first_n_even_numbers(1))
+print(sum_of_first_n_even_numbers(2))
+print(sum_of_first_n_even_numbers(5))
