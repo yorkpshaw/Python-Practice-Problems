@@ -15,3 +15,19 @@
 #       parameter 2: 0
 #     returns: "92380"
 
+
+# Convert each number to a
+# string and add them together
+
+
+def num_concat(num1, num2):
+    string_num1 = str(num1)
+    string_num2 = str(num2)
+
+    string_number = string_num1 + string_num2
+
+    return string_number
+
+
+print(num_concat(3, 10))
+print(num_concat(9238, 0))
