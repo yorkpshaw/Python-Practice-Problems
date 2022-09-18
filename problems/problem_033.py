@@ -22,8 +22,8 @@ def sum_of_first_n_even_numbers(n):
 
     count = 0
 
-    for number in range(n + 1):  # 3 + 1 = 4. Up to 3
-        count += number * 2  # 1*2 + 2*2 + 3*2
+    for number in range(n + 1):
+        count += number * 2
 
     return count
 
