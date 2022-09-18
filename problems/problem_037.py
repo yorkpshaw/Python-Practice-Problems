@@ -23,5 +23,24 @@
 #     pad:    " "
 #     result: "   19"
 
+
+# Output returns a string
+# Convert number to a string and stash it in a variable
+# While the length of the number string is less than the length parameter,
+# add the string pad + number string
+# Pad needs to be on the left/right depending on placement
+
+
 def pad_left(number, length, pad):
-    pass
+    numero = str(number)
+
+    while len(numero) < length:
+        numero = pad + numero
+
+    return numero
+
+
+print(pad_left(10, 4, "*"))
+print(pad_left(10, 5, "0"))
+print(pad_left(1000, 3, "0"))
+print(pad_left(19, 5, " "))
