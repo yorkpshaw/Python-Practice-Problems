@@ -16,6 +16,7 @@
 # Create an empty list to append to
 # Create a variable that is a zip of the two lists
 # Loop over each element in the zipped list, and add the numbers to each other
+# Must use two variables in for loop to append over both values
 
 
 def pairwise_add(list1, list2):
