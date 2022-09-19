@@ -31,3 +31,12 @@ def biggest_gap(nums):
 print(biggest_gap([1, 3, 5, 7]))
 print(biggest_gap([1, 11, 9, 20, 0]))
 print(biggest_gap([1, 3, 100, 103, 106]))
+
+
+# create a variable to return at the end
+# use abs, and subtract element[1] - element[0] to compare others with
+# loop over the list of numbers, the range will be:
+# 1 to the end of the list (len - 1)
+# create a variable that uses abs, and is (index+1) - (current index)
+# if that difference is greater than the original variable,
+# set that number difference to be the variable to return at the end
