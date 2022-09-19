@@ -25,6 +25,7 @@
 # loop over the parameter
 # split the list in the variable passed in the loop
 # create a count variable set to 0
+# this is so it doesn't keep resetting inside the next loop
 # loop over the split list
 # convert each element in the split list to an integer
 # increment the count variable by the converted integer
