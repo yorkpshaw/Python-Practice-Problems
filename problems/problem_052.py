@@ -15,6 +15,11 @@
 #
 # https://docs.python.org/3/library/random.html
 
+
+# create an empty list variable
+# while the len of the variable is less than the number of numbers in the list,
+# generate a random number to append if not in the list
+
 from random import randint
 
 
