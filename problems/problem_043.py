@@ -19,5 +19,31 @@
 #
 # Look up the enumerate function to help you with this problem.
 
+
+# Create an empty list variable to contain indices,
+# Return that variable at the end
+
+# Use the enumerate function to return a list of the index with key
+# You can also enumerate on first line of a for loop...
+# No need for extra variable
+
+# If the value of the second number is equal to parameter,
+# append the first number (index) to the empty variable.
+
+# return the index of the list
+
+
 def find_indexes(search_list, search_term):
-    pass
+    idx_value = []
+    idx_list = enumerate(search_list)
+
+    for idx, number in idx_list:
+        if number == search_term:
+            idx_value.append(idx)
+
+    return idx_value
+
+
+print(find_indexes([1, 2, 3, 4, 5], 4))
+print(find_indexes([1, 2, 3, 4, 5], 6))
+print(find_indexes([1, 2, 1, 2, 1], 1))
