@@ -19,6 +19,12 @@
 
 ## FUNCTION PSEUDOCODE
 
+# Create an empty dictionary variable to return
+# Create a variable that splits the string into elements
+# loop over the split variable
+# if the word is in the empty dictionary, increment key value by 1
+# otherwise, keep it at 1
+
 
 def count_word_frequencies(sentences):
 
