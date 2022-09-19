@@ -12,5 +12,21 @@
 #
 # Look up the zip function to help you with this problem.
 
+
+# Create an empty list to append to
+# Create a variable that is a zip of the two lists
+# Loop over each element in the zipped list, and add the numbers to each other
+
+
 def pairwise_add(list1, list2):
-    pass
+    list3 = []
+    zipped_lists = zip(list1, list2)
+
+    for x, y in zipped_lists:
+        list3.append(x + y)
+
+    return list3
+
+
+print(pairwise_add([1, 2, 3, 4], [4, 5, 6, 7]))
+print(pairwise_add([100, 200, 300], [10, 1, 180]))
